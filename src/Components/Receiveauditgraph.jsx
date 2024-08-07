@@ -45,9 +45,6 @@ const ReceiveAudit = () => {
       })
   }, []);
 
-  console.log("pass count: ", passCount);
-  console.log("fail count: ", failCount);
-
   const options = {
     plugins: {
       legend: {
