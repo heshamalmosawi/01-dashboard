@@ -22,7 +22,7 @@ const UserInfo = () => {
                 setUser(data.data.user[0])
                 setAttributes(data.data.user[0].attrs)
             });
-    });
+    }, []);
 
 
     let fullName = `${attributes.firstName || null} ${attributes.lastName || null}`;
@@ -42,9 +42,6 @@ const UserInfo = () => {
             <h3>Phone:&nbsp;</h3><p>{phone}</p>
         </div>
     );
-
-
-    // console.log(user.attrs)
 };
 
 export default UserInfo
